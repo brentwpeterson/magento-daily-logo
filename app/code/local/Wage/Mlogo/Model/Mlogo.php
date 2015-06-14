@@ -1,0 +1,10 @@
+<?php
+
+class Wage_Mlogo_Model_Mlogo extends Mage_Core_Model_Abstract
+{
+    public function _construct()
+    {
+        parent::_construct();
+        $this->_init('mlogo/mlogo');
+    }
+}
