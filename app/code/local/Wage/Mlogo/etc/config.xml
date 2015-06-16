@@ -86,6 +86,11 @@
             <mlogo>
                 <class>Wage_Mlogo_Block</class>
             </mlogo>
+            <page>
+                <rewrite>
+                    <html_header>Wage_Mlogo_Block_Page_Html_Header</html_header>
+                </rewrite>
+            </page>
         </blocks>
         <helpers>
             <mlogo>
