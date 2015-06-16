@@ -30,4 +30,11 @@
             </admin>
         </resources>
     </acl>
+    <layout>
+	<updates>
+	<mlogo>
+	<file>mlogo.xml</file>
+	</mlogo>
+	</updates>
+   </layout>
 </config>
