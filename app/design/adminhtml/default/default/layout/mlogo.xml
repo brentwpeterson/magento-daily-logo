@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <mlogo_adminhtml_mlogo_index>
+        <reference name="content">
+            <block type="mlogo/adminhtml_mlogo" name="mlogo" />
+        </reference>
+    </mlogo_adminhtml_mlogo_index>
+</layout>
