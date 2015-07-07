@@ -16,6 +16,15 @@
 			</mlogo>
         </routers>
     </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <mlogo>
+                    <file>mlogo.xml</file>
+                </mlogo>
+            </updates>
+        </layout>
+    </adminhtml>   
     <global>
         <models>
             <mlogo>
