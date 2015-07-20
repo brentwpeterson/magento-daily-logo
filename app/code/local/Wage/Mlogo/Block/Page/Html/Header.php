@@ -3,13 +3,7 @@ class Wage_Mlogo_Block_Page_Html_Header extends Mage_Page_Block_Html_Header
 {
     public function getLogoSrc()
     {
-        $dated = date('Y-m-d H:i:s');
-        $mlogo = Mage::getModel('mlogo/mlogo')->getCollection()
-            ->addfieldtofilter('status', array('eq' => '1'))
-            ->addfieldtofilter('schedule_start', array('lteq' => $dated))
-            ->addfieldtofilter('schedule_end', array('gteq' => $dated));
-        $mlogoData = $mlogo->getFirstItem()->getData();
-
+        $mlogoData = $this->helper('mlogo')->getLogo();
         if(!empty($mlogoData)){
             return Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$mlogoData['filename'];
         }
@@ -22,13 +16,7 @@ class Wage_Mlogo_Block_Page_Html_Header extends Mage_Page_Block_Html_Header
 
     public function getLogoSrcSmall()
     {
-        $dated = date('Y-m-d H:i:s');
-        $mlogo = Mage::getModel('mlogo/mlogo')->getCollection()
-            ->addfieldtofilter('status', array('eq' => '1'))
-            ->addfieldtofilter('schedule_start', array('lteq' => $dated))
-            ->addfieldtofilter('schedule_end', array('gteq' => $dated));
-        $mlogoData = $mlogo->getFirstItem()->getData();
-
+        $mlogoData = $this->helper('mlogo')->getLogo();
         if(!empty($mlogoData)){
             return Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$mlogoData['filename'];
         }
@@ -41,13 +29,7 @@ class Wage_Mlogo_Block_Page_Html_Header extends Mage_Page_Block_Html_Header
 
     public function getLogoAlt()
     {
-        $dated = date('Y-m-d H:i:s');
-        $mlogo = Mage::getModel('mlogo/mlogo')->getCollection()
-            ->addfieldtofilter('status', array('eq' => '1'))
-            ->addfieldtofilter('schedule_start', array('lteq' => $dated))
-            ->addfieldtofilter('schedule_end', array('gteq' => $dated));
-        $mlogoData = $mlogo->getFirstItem()->getData();
-
+        $mlogoData = $this->helper('mlogo')->getLogo();
         if(!empty($mlogoData)){
             return $mlogoData['title'];
         }

@@ -24,7 +24,7 @@
                 </mlogo>
             </updates>
         </layout>
-    </adminhtml>   
+    </adminhtml> 
     <global>
         <models>
             <mlogo>
@@ -75,5 +75,15 @@
                 <class>Wage_Mlogo_Helper</class>
             </mlogo>
         </helpers>
+        <events>
+            <core_block_abstract_to_html_after>
+                <observers>
+                    <Wage_Mlogo_Model_Observer>
+                        <class>Wage_Mlogo_Model_Observer</class>
+                        <method>coreBlockAbstractToHtmlAfter</method>
+                    </Wage_Mlogo_Model_Observer>
+                </observers>
+            </core_block_abstract_to_html_after>
+        </events>
     </global>
 </config>

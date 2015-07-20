@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<config>
+      <tabs>
+        <wage translate="label" module="mlogo">
+            <label>Wagento</label>
+            <sort_order>999</sort_order>
+        </wage>
+      </tabs>
+      <sections>
+        <mlogo  translate="label" module="mlogo">                    
+            <label>Mlogo</label>
+            <tab>wage</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>99</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>            
+            <groups>
+                <general translate="label"> 
+                    <label>Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>99</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable translate="label">
+                            <label>Enable Mlogo</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enable/Disable Mlogo</comment>
+                        </enable>
+                        <enablelabel translate="label">
+                            <label>Enable Mlogo Label</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enable/Disable Mlogo Label</comment>
+                        </enablelabel>
+                        <logoclass translate="label">
+                            <label>Logo Class name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Add class name of element to append the logo label</comment>
+                        </logoclass>
+                        <class translate="label">
+                            <label>Mlogo Label Class Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Add class name to label element, use class name for styling.</comment>
+                        </class>
+                        <style translate="label">
+                            <label>Style/Css Property</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Add css property for logo label. For e.g  float:left;text-align:center;</comment>
+                        </style>
+                    </fields>
+                </general>
+            </groups>
+        </mlogo>
+      </sections>
+</config>

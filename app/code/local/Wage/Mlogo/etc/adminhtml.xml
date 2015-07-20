@@ -21,20 +21,25 @@
                         <sort_order>70</sort_order>
                         <children>
                             <Wage_Mlogo>
-			 <title>Mlogo Module</title>
-			 <sort_order>10</sort_order>
-			</Wage_Mlogo>
+                                <title>Mlogo Module</title>
+                                <sort_order>10</sort_order>
+                            </Wage_Mlogo>
                         </children>
                     </cms>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <mlogo translate="title" module="mlogo">
+                                        <title>Mlogo Section</title>
+                                        <sort_order>99</sort_order>
+                                    </mlogo>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
                 </children>
             </admin>
         </resources>
     </acl>
-    <layout>
-	<updates>
-	<mlogo>
-	<file>mlogo.xml</file>
-	</mlogo>
-	</updates>
-   </layout>
 </config>
